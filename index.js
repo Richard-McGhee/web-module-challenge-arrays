@@ -117,7 +117,7 @@ Hint: You can use .splice() for this
 function removeFlavorByName(arr, flavor){
     for(let i = 0; i < arr.length; i++){
         if(arr[i].includes(flavor)){
-            return arr.splice[i];
+            arr.splice(i, 1);
         }
     }
     return console.log(arr);
