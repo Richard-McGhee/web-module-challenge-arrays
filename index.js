@@ -43,9 +43,9 @@ i.e. is31Flavors(originalFlavors) will return TRUE.*/
 function is31Flavors(arr){
 
     if(arr.length === 31){
-        console.log('TRUE')
+        return true;
     }else {
-        console.log('FALSE')
+        return false;
     }
 }
 
