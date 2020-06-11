@@ -183,10 +183,24 @@ For example, getAverageWordLength(originalFlavors) should return a number betwee
 function getAverageWordLength(arr){
     let addition = 0
     for(let i = 0; i < arr.length; i++){
-        addition += [i]
+        // addition += arr[i].length
+        if(!(arr[i].includes(" "))){
+            addition += 1
+        }
+        if(!(arr[i].includes(" ", " "))){
+            addition += 2
+        }
+        // console.log(addition)
+        // if(arr[i].includes(" ")){
+        //     addition += 3
+        // }
+        // if(arr[i].includes(" " && " " && " ")){
+        //     addition += 4
+        // }
         // console.log(addition)
     }
-    console.log(addition = addition / arr.length)
+    console.log(addition)
+    // console.log(addition = addition / arr.length)
 }
 
 getAverageWordLength(originalFlavors);
@@ -272,7 +286,7 @@ var regionalFlavors = ["Pink Bubblegum",
     "Chocolate Chocolate Chip Cheesecake",
     "Caramel 'n' Cookies"]
 
-function getRandomFlavors(/*code here*/){
+function getRandomFlavors(flavSet1, flavSet2, flavSet3, flavSet4){
 
     /*code here*/
 
