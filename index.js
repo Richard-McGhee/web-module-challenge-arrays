@@ -187,7 +187,7 @@ function getAverageWordLength(arr){
         if(!(arr[i].includes(" "))){
             addition += 1
         }
-        if(!(arr[i].includes(" ", " "))){
+        if(arr[i].includes(" ")){
             addition += 2
         }
         // console.log(addition)
